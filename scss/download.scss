@@ -1,10 +1,16 @@
 @import "./styles.scss";
-@import "./components/resetLinks.scss";
+@import "./components/resetLinks";
+@import "./components/variables";
 main {
     margin-top: 20vh;
     margin-left: 25vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 
     .heading-content {
+        grid-column: 1/2;
+        grid-row: 1/2;
         margin-bottom: 10vh;
 
         h3 {
@@ -19,8 +25,44 @@ main {
 
             a {
                 @include resetLink;
-                color: #d1345b85;
+                color: rgba($color: $red-color, $alpha: 0.52);
             }
         }
+    }
+
+    .content {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        h2 {
+            font-weight: 700;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 2rem;
+
+            a {
+                @include resetLink;
+                color: $red-color;
+            }
+
+            li {
+                font-size: 18px;
+                color: #fff;
+                font-weight: 400;
+                margin-bottom: 1rem;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    #right-image {
+        grid-column: 2/3;
+        grid-row: 1/3;
     }
 }
