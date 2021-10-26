@@ -198,6 +198,10 @@ main p a:visited {
 }
 
 @media screen and (max-width: 400px) {
+  html,
+  body {
+    overflow-y: hidden;
+  }
   main h1 {
     font-size: 36px;
     font-weight: 500;

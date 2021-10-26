@@ -31,6 +31,10 @@ main {
 }
 
 @media screen and(max-width:400px) {
+    html,
+    body {
+        overflow-y: hidden;
+    }
     main {
         h1 {
             font-size: 36px;
