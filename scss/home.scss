@@ -1,4 +1,4 @@
-@import "./styles.scss";
+@import "./styles";
 @import "./components/_resetLinks.scss";
 @import "./components/_hoverBefore.scss";
 
@@ -48,6 +48,30 @@ main {
             font-size: 72px;
             font-weight: 700;
             color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        & > .title {
+            h4 {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            h1 {
+                font-size: 36px;
+                font-weight: 700;
+            }
+        }
+
+        a {
+            font-weight: 400;
+            font-size: 13px;
+            > img {
+                width: 2rem;
+            }
         }
     }
 }

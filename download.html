@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/detectDevice.js" defer></script>
         <script src="./js/download.js" defer></script>
+        <script src="./js/changeFooterState.js" defer></script>
         <link rel="stylesheet" href="scss/download.css">
         <link rel="shortcut icon" href="ressources/snake_logo.ico" type="image/x-icon">
         <title>Télécharger l'île aux Pythons</title>
@@ -32,22 +34,48 @@
                         href="https://github.com/Redshark61/Python-Island/archive/refs/heads/master.zip">cliquez ici</a>
                 </p>
             </div>
+            <div class="heading-content-phone">
+                <h3>Vous ne pourrez pas jouer au jeu sur votre portable 😭</h3>
+                <p><a href="https://github.com/Redshark61/Python-Island/archive/refs/heads/master.zip">Cliquez ici</a>
+                    si vous voulez télécharger malgré tout</p>
+            </div>
 
             <div class="content">
                 <h2>Comment lancer le jeu ?</h2>
 
                 <ul>
-                    <li><img src="ressources/download.svg" alt="Télécharger Python"><a
-                            href="https://www.python.org/downloads/" target="_blank">Télécharger</a> Python 3.10 (si ce
-                        n'est pas déjà fait)</li>
-                    <li><img src="ressources/zipFile.svg" alt="Dézippez le dossier">Dézippez le dossier</li>
-                    <li><img src="ressources/stars.svg" alt="Lancez main.py">Lancez main.py</li>
+                    <li><img src="ressources/computer.svg" alt="Dézippez le dossier"><span>
+                            Télécharger le jeu sur un
+                            ordinateur
+                        </span>
+                    </li>
+                    <li><img src="ressources/download.svg" alt="Télécharger Python"><span>
+                            <a href="https://www.python.org/downloads/" target="_blank">Télécharger</a> Python 3.10 (si
+                            ce
+                            n'est pas déjà fait)
+                        </span></li>
+                    <li><img src="ressources/zipFile.svg" alt="Dézippez le dossier"><span>Dézippez le dossier</span>
+                    </li>
+                    <li><img src="ressources/stars.svg" alt="Lancez main.py"><span>Lancez main.py</span></li>
                 </ul>
 
             </div>
 
             <img src="ressources/undraw_cloud_files_wmo8.svg" alt="" id="right-image">
         </main>
+        <footer>
+            <a class="phone-nav-btn" href="./documentation.html"><img src="ressources/doc-btn.svg"
+                    alt="Documentation"><span>Documentation</span></a>
+
+            <a class="phone-nav-btn active" href="./index.html"><img src="./ressources/home-btn.svg"
+                    alt="Accueil"><span>Acceuil</span></a>
+
+            <a class="phone-nav-btn" href="./informations.html"><img src="./ressources/info-btn.svg"
+                    alt="Information"><span>Informations</span></a>
+            <a class="phone-nav-btn" href="./download.html">
+                <img src="./ressources/download-btn.svg" alt="Télécharger"><span>Télécharger</span>
+            </a>
+        </footer>
 
     </body>
 

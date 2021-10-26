@@ -1,4 +1,4 @@
-@import "./styles.scss";
+@import "./styles";
 @import "./components/resetLinks";
 @import "./components/variables";
 main {
@@ -7,7 +7,12 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
+    .heading-content-phone {
+        display: none;
+    }
+
     .heading-content {
+        display: block;
         grid-column: 1/2;
         grid-row: 1/2;
         margin-bottom: 10vh;
@@ -48,13 +53,26 @@ main {
             }
 
             li {
+                display: grid;
+                grid-template-columns: 40px 1fr;
                 font-size: 18px;
                 color: #fff;
                 font-weight: 400;
                 margin-bottom: 1rem;
+                align-items: center;
+
+                &:first-of-type {
+                    display: none;
+                }
+
+                span {
+                    grid-column: 2/3;
+                }
 
                 img {
                     margin-right: 10px;
+                    grid-column: 1/2;
+                    justify-items: start;
                 }
             }
         }
@@ -63,5 +81,60 @@ main {
     #right-image {
         grid-column: 2/3;
         grid-row: 1/3;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        display: flex;
+        flex-direction: column;
+
+        .heading-content {
+            display: none;
+        }
+        .heading-content-phone {
+            display: block;
+            h3 {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+            }
+            p {
+                color: rgba($color: #fff, $alpha: 0.6);
+                font-size: 11px;
+                font-weight: 400;
+
+                a {
+                    @include resetLink;
+                    color: rgba($color: $red-color, $alpha: 0.6);
+                    text-decoration: underline;
+                }
+            }
+            margin-bottom: 3rem;
+        }
+
+        .content {
+            h2 {
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            ul {
+                margin-top: 1rem;
+                li {
+                    &:first-of-type {
+                        display: grid;
+                    }
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+        #right-image {
+            width: 50%;
+            align-self: flex-end;
+            margin-right: 2rem;
+        }
     }
 }

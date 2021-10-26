@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&display=swap");
+@import "./components/resetLinks";
+@import "./components/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("../ressources/background.png");
+    min-height: 100vh;
+}
+
+main {
+    margin-left: 25vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-headings {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 15px 0 0 15px;
+
+        > [alt="logo"] {
+            margin-right: 30px;
+            border-radius: 50%;
+            width: 61px;
+            height: 61 px;
+        }
+
+        > a {
+            @include resetLink;
+            font-size: 24px;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            margin: 0 10px;
+            @include resetLink;
+            font-size: 18px;
+            font-weight: 400;
+
+            &.red-button {
+                background-color: #ad1037;
+                border-radius: 9px;
+                padding: 0.75rem;
+            }
+        }
+    }
+}
+
+footer {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 100vw;
+    }
+
+    main {
+        margin-left: 10vw;
+    }
+
+    nav > .links {
+        display: none;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: block;
+        color: #fff;
+        background: $red-color;
+        width: 100%;
+        padding: 0.5rem 0 0.5rem 0;
+
+        justify-content: space-around;
+        display: flex;
+
+        .phone-nav-btn {
+            @include resetLink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            &.active {
+                transform: translateY(-20%);
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: $red-color;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    z-index: -1;
+                }
+
+                span {
+                    color: #1c0faa;
+                    font-weight: 600;
+                }
+            }
+
+            img {
+                flex-basis: 0;
+            }
+
+            span {
+                font-size: 11px;
+                font-weight: 400;
+            }
+        }
+    }
+}

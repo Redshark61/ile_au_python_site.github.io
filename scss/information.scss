@@ -1,4 +1,4 @@
-@import "./styles.scss";
+@import "./styles";
 @import "./components/variables";
 main {
     color: #fff;
@@ -56,5 +56,38 @@ main {
                 z-index: -1;
             }
         }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        h1 {
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        p {
+            max-width: 80vw;
+
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        section {
+            .gameplay-img {
+                max-width: 80vw;
+            }
+            .captioned-image {
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+        padding-bottom: 5vh;
     }
 }
