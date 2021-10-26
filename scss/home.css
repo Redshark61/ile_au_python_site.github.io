@@ -11,6 +11,10 @@ body {
   background-image: url("../ressources/background.png");
 }
 
+main {
+  margin-left: 25vw;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +52,10 @@ nav .main-headings > [alt="logo"] {
   height: 61 px;
 }
 
-nav .main-headings > h3 {
+nav .main-headings > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
   color: #fff;
   font-weight: 700;
 }
@@ -85,16 +92,24 @@ nav .links a.red-button {
 
 main {
   margin-top: 20vh;
-  margin-left: 25vw;
 }
 
 main .download-btn {
   color: #fff;
   text-decoration: none;
-  display: inline-block;
   margin-top: 10vh;
   color: #000;
   background: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem 2rem;
   border-radius: 9px;
   position: relative;
