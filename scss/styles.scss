@@ -12,6 +12,10 @@ body {
     background-image: url("../ressources/background.png");
 }
 
+main {
+    margin-left: 25vw;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -31,7 +35,9 @@ nav {
             height: 61 px;
         }
 
-        > h3 {
+        > a {
+            @include resetLink;
+            font-size: 24px;
             color: #fff;
             font-weight: 700;
         }

@@ -1,0 +1,41 @@
+@import "./styles.scss";
+@import "./components/variables";
+main {
+    color: #fff;
+    h1 {
+        font-size: 72px;
+        font-weight: 700;
+        margin-bottom: 5vh;
+        margin-top: 10vh;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        max-width: 50vw;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    section {
+        margin-bottom: 3rem;
+
+        .gameplay-img {
+            max-width: 50vw;
+        }
+
+        .captioned-image {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+
+            span {
+                color: $red-color;
+            }
+        }
+    }
+}

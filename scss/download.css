@@ -11,6 +11,10 @@ body {
   background-image: url("../ressources/background.png");
 }
 
+main {
+  margin-left: 25vw;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +52,10 @@ nav .main-headings > [alt="logo"] {
   height: 61 px;
 }
 
-nav .main-headings > h3 {
+nav .main-headings > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
   color: #fff;
   font-weight: 700;
 }
@@ -85,7 +92,6 @@ nav .links a.red-button {
 
 main {
   margin-top: 20vh;
-  margin-left: 25vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
