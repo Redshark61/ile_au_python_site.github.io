@@ -4,9 +4,9 @@
     "sources": [
         "home.scss",
         "styles.scss",
-        "components/resetLinks.scss",
-        "components/resetLinks.scss",
-        "components/hoverBefore.scss"
+        "components/_resetLinks.scss",
+        "components/_resetLinks.scss",
+        "components/_hoverBefore.scss"
     ],
     "names": [],
     "file": "home.css"
