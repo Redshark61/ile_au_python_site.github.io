@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("../ressources/background.png");
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .main-headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0 0 15px;
+}
+
+nav .main-headings > [alt="logo"] {
+  margin-right: 30px;
+  border-radius: 50%;
+  width: 61px;
+  height: 61 px;
+}
+
+nav .main-headings > h3 {
+  color: #fff;
+  font-weight: 700;
+}
+
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .links a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav .links a.red-button {
+  background-color: #ad1037;
+  border-radius: 9px;
+  padding: 0.75rem;
+}
+
+main {
+  margin-top: 20vh;
+  margin-left: 25vw;
+}
+
+main .heading-content {
+  margin-bottom: 10vh;
+}
+
+main .heading-content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+
+main .heading-content p {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.52);
+}
+
+main .heading-content p a {
+  color: #fff;
+  text-decoration: none;
+  color: #d1345b85;
+}
+/*# sourceMappingURL=download.css.map */

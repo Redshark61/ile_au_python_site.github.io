@@ -1,0 +1,52 @@
+@import "./styles.scss";
+@import "./components/resetLinks.scss";
+@import "./components/hoverBefore.scss";
+
+main {
+    margin-top: 20vh;
+    margin-left: 25vw;
+
+    .download-btn {
+        @include resetLink;
+        display: inline-block;
+        margin-top: 10vh;
+        color: #000;
+        background: #fff;
+        padding: 1rem 2rem;
+        border-radius: 9px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 9px;
+            z-index: -1;
+            @include hoverBefore(7px, -7px, -7px, 7px);
+            top: 7px;
+            bottom: -7px;
+            right: -7px;
+            left: 7px;
+            background: rgba($color: #d1345b, $alpha: 0.5);
+            transition: all 200ms ease;
+        }
+
+        &:hover {
+            &::before {
+                @include hoverBefore(4px, -4px, -4px, 4px);
+            }
+        }
+    }
+
+    > .title {
+        h4 {
+            font-weight: 300;
+            font-size: 18px;
+            color: rgba($color: #fff, $alpha: 0.68);
+            line-height: 2rem;
+        }
+        h1 {
+            font-size: 72px;
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+}

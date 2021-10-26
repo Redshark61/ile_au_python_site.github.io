@@ -1,0 +1,6 @@
+@mixin hoverBefore($top, $right, $bottom, $left) {
+    top: $top;
+    bottom: $bottom;
+    right: $right;
+    left: $left;
+}

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("../ressources/background.png");
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .main-headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0 0 15px;
+}
+
+nav .main-headings > [alt="logo"] {
+  margin-right: 30px;
+  border-radius: 50%;
+  width: 61px;
+  height: 61 px;
+}
+
+nav .main-headings > h3 {
+  color: #fff;
+  font-weight: 700;
+}
+
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .links a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav .links a.red-button {
+  background-color: #ad1037;
+  border-radius: 9px;
+  padding: 0.75rem;
+}
+
+main {
+  margin-top: 20vh;
+  margin-left: 25vw;
+}
+
+main .download-btn {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10vh;
+  color: #000;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  position: relative;
+}
+
+main .download-btn::before {
+  content: "";
+  position: absolute;
+  border-radius: 9px;
+  z-index: -1;
+  top: 7px;
+  bottom: -7px;
+  right: -7px;
+  left: 7px;
+  top: 7px;
+  bottom: -7px;
+  right: -7px;
+  left: 7px;
+  background: rgba(209, 52, 91, 0.5);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+main .download-btn:hover::before {
+  top: 4px;
+  bottom: -4px;
+  right: -4px;
+  left: 4px;
+}
+
+main > .title h4 {
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 2rem;
+}
+
+main > .title h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+}
+/*# sourceMappingURL=home.css.map */
