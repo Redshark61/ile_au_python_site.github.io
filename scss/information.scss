@@ -22,7 +22,7 @@ main {
         line-height: 24px;
     }
     section {
-        margin-bottom: 3rem;
+        margin-bottom: 10vh;
 
         .gameplay-img {
             max-width: 50vw;
@@ -35,6 +35,25 @@ main {
 
             span {
                 color: $red-color;
+            }
+        }
+
+        &#story > p {
+            position: relative;
+            &::before {
+                content: url("../ressources/left-quotes.svg");
+                position: absolute;
+                top: -40px;
+                left: -40px;
+                z-index: -1;
+            }
+
+            &::after {
+                content: url("../ressources/right-quotes.svg");
+                position: absolute;
+                bottom: -10px;
+                right: -10px;
+                z-index: -1;
             }
         }
     }

@@ -115,7 +115,7 @@ main p {
 }
 
 main section {
-  margin-bottom: 3rem;
+  margin-bottom: 10vh;
 }
 
 main section .gameplay-img {
@@ -135,5 +135,25 @@ main section .captioned-image {
 
 main section .captioned-image span {
   color: #d1345b;
+}
+
+main section#story > p {
+  position: relative;
+}
+
+main section#story > p::before {
+  content: url("../ressources/left-quotes.svg");
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  z-index: -1;
+}
+
+main section#story > p::after {
+  content: url("../ressources/right-quotes.svg");
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  z-index: -1;
 }
 /*# sourceMappingURL=information.css.map */
